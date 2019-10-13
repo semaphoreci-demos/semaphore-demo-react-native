@@ -9,8 +9,13 @@ describe('App', () => {
   });
 
   it('should show switch and toggle it on', async () => {
-    await expect(element(by.id('toggle'))).toHaveValue('0');
-    await element(by.id('toggle')).longPress();
-    await expect(element(by.id('toggle'))).toHaveValue('1');
+    const isAndroid = device.getPlatform() === 'android';
+
+    await expect(element(by.id('toggle'))).toBeVisible();
+    if (!isAndroid) {
+      await expect(element(by.id('toggle'))).toHaveValue('0');
+      await element(by.id('toggle')).longPress();
+      await expect(element(by.id('toggle'))).toHaveValue('1');
+    }
   });
 });

@@ -1,5 +1,5 @@
 version: v1.0
-name: Semaphore React Native Example Pipeline
+name: Semaphore React Native Android Example Pipeline
 agent:
   machine:
     type: e1-standard-4

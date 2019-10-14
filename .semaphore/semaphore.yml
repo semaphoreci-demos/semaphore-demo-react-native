@@ -1,0 +1,62 @@
+version: v1.0
+name: Semaphore React Native Example Pipeline
+agent:
+  machine:
+    type: a1-standard-4
+    os_image: macos-mojave
+blocks:
+  - name: Install dependencies
+    task:
+      jobs:
+        - name: npm install and cache
+          commands:
+            # Get the latest version of our source code from GitHub:
+            - checkout
+            # Restore dependencies from cache. This command will not fail in
+            # case of a cache miss. In case of a cache hit, npm install will
+            # run very fast.
+            # For more info on caching, see https://docs.semaphoreci.com/article/68-caching-dependencies
+            - cache restore
+            - npm install
+
+            # Store the latest version of node modules in cache to reuse in
+            # further blocks:
+            - cache store
+  - name: Run linter
+    task:
+      prologue:
+        commands:
+          - checkout
+      jobs:
+        - name: run eslint
+          commands:
+            - cache restore
+            - npm run lint
+  - name: Run tests
+    task:
+      prologue:
+        commands:
+          # Download source code from GitHub:
+          - checkout
+      jobs:
+        - name: unit and integration tests
+          commands:
+            - cache restore
+            - npm test
+        - name: e2e tests
+          commands:
+            # Install dependencies for detox.js
+            - brew tap wix/brew
+            - brew install applesimutils
+            - npm install -g detox@12.7.0
+            - cache restore
+            # build and test
+            - detox build --configuration ios.sim.release
+            - detox test --configuration ios.sim.release --cleanup
+promotions:
+- name: Build app
+  pipeline_file: release-build.yml
+  auto_promote_on:
+  - result: passed
+    branch:
+    - master

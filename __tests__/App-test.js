@@ -25,16 +25,20 @@ describe('enzyme tests', () => {
 
   it('should togggle switch to true', () => {
     const wrapper = shallow(<App />);
-    const switchValue = wrapper
+    const switchValueBeforeToggle = wrapper
       .find(Switch)
       .first()
       .props().value;
-    expect(switchValue).toBe(false);
+    expect(switchValueBeforeToggle).toBe(false);
     wrapper
       .find(Switch)
       .first()
       .props()
       .onChange();
-    expect(switchValue).toBe(true);
+    const switchValueAfterToggle = wrapper
+      .find(Switch)
+      .first()
+      .props().value;
+    expect(switchValueAfterToggle).toBe(true);
   });
 });

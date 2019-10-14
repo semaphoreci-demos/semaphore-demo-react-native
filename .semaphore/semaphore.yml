@@ -50,6 +50,9 @@ blocks:
             - brew install applesimutils
             - npm install -g detox@12.7.0
             - cache restore
+            - cd ios
+            - pod install
+            - cd ..
             # build and test
             - detox build --configuration ios.sim.release
             - detox test --configuration ios.sim.release --cleanup

@@ -3,7 +3,7 @@ name: Semaphore React Native iOS Example Pipeline
 agent:
   machine:
     type: a1-standard-4
-    os_image: macos-mojave-xcode10
+    os_image: macos-mojave-xcode11
 blocks:
   - name: Install dependencies
     task:
@@ -48,7 +48,7 @@ blocks:
             # Install dependencies for detox.js
             - brew tap wix/brew
             - brew install applesimutils
-            - npm install -g detox@12.7.0
+            - npm install -g detox
             - cache restore
             - cd ios
             - pod install

@@ -6,14 +6,14 @@ agent:
   containers:
   - name: main
     image: semaphoreci/android:base
+  - name: node
+    image: node:latest
 blocks:
   - name: Install dependencies
     task:
       jobs:
         - name: npm install and cache
           commands:
-            - curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-            - sudo apt-get install nodejs
             # Get the latest version of our source code from GitHub:
             - checkout
             # Restore dependencies from cache. This command will not fail in

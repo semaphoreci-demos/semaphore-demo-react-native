@@ -48,8 +48,6 @@ blocks:
         - name: e2e tests
           commands:
             # Install dependencies for detox.js
-            - brew tap wix/brew
-            - brew install applesimutils
             - npm install -g detox
             - cache restore
             # build and test

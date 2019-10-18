@@ -32,6 +32,7 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "eslint": "6.1.0",
+    "eslint-plugin-react": "^7.16.0",
     "jest": "^24.9.0",
     "jest-enzyme": "^7.1.1",
     "metro-react-native-babel-preset": "^0.56.0",

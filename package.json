@@ -32,11 +32,6 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "eslint": "6.1.0",
-    "eslint-config-airbnb": "18.0.1",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-react-hooks": "^1.7.0",
     "jest": "^24.9.0",
     "jest-enzyme": "^7.1.1",
     "metro-react-native-babel-preset": "^0.56.0",
@@ -72,13 +67,13 @@
         "binaryPath": "android/app/build/outputs/apk/debug/app-debug.apk",
         "build": "cd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug && cd ..",
         "type": "android.emulator",
-        "name": "Nexus_5X_API_27"
+        "name": "Nexus_5X_API_29"
       },
       "android.emu.release": {
         "binaryPath": "android/app/build/outputs/apk/release/app-release.apk",
         "build": "cd android && ./gradlew assembleRelease assembleAndroidTest -DtestBuildType=release && cd ..",
         "type": "android.emulator",
-        "name": "Nexus_5X_API_27"
+        "name": "Nexus_5X_API_29"
       }
     },
     "test-runner": "jest"

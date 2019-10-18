@@ -5,9 +5,7 @@ agent:
     type: e1-standard-2
   containers:
   - name: main
-    image: semaphoreci/android:base
-  - name: node
-    image: node:latest
+    image: semaphoreci/android:29-node
 blocks:
   - name: Install dependencies
     task:

@@ -40,7 +40,9 @@ blocks:
         commands:
           # Download source code from GitHub:
           - checkout
-          - echo "no" | avdmanager --verbose create avd --force --name Nexus_S_API_29 --device "4in WVGA (Nexus S)" --package "system-images;android-29;google_apis;x86" --tag "google_apis" --abi "x86"
+          - sdkmanager "platform-tools" "platforms;android-24" "emulator"
+          - sdkmanager "system-images;android-24;default;armeabi-v7a"
+          - echo no | avdmanager create avd -n Nexus_S_API_24 -k "system-images;android-24;default;armeabi-v7a"
       jobs:
         - name: unit and integration tests
           commands:

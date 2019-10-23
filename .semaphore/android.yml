@@ -42,7 +42,7 @@ blocks:
           - checkout
           # Install android emulator
           - sdkmanager "platform-tools" "platforms;android-24" "emulator"
-          - sdkmanager "system-images;android-24;default;armeabi-v7a"
+          - sdkmanager "system-images;android-24;default;google_apis;x86_64"
           - echo no | avdmanager create avd -n Nexus_S_API_24 --abi google_apis/x86_64 -k "system-images;android-24;default;google_apis;x86_64" --device "Nexus S"
       jobs:
         - name: unit and integration tests

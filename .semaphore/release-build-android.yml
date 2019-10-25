@@ -14,6 +14,7 @@ blocks:
           value: en_US.UTF-8
       prologue:
         commands:
+          - sudo gem install bundler
           # Download source code from GitHub:
           - checkout
 

@@ -2,4 +2,4 @@
 #
 # Ensure this file is checked in to source control!
 
-gem 'fastlane-plugin-semaphore'
+gem 'fastlane-plugin-semaphore',  '0.2.0'

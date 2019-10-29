@@ -17,7 +17,7 @@
     "detox-android-test-release": "detox test --configuration android.emu.release --cleanup --headless",
     "lint": "eslint *.js **/*.js ",
     "fastline-build-ios": "bundle exec fastlane ios build",
-    "fastline-build-android": "bundle exec fastlane android build"
+    "fastline-build-android": "bundle exec fastlane android build --verbose"
   },
   "dependencies": {
     "react": "16.9.0",

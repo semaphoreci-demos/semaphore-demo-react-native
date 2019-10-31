@@ -3,7 +3,7 @@ name: Semaphore React Native Android Example Pipeline
 agent:
   machine:
     type: e1-standard-2
-    containers:
+  containers:
     - name: main
       image: semaphoreci/android:29-node
 blocks:

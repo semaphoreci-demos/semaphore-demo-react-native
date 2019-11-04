@@ -37,7 +37,7 @@ end
 platform :android do
   before_all do
     # installed via the semaphore plugin with `fastlane add_plugin semaphore`
-    setup_semaphore
+    # setup_semaphore
   end
 
   desc "Build"

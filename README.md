@@ -14,7 +14,7 @@ The CI pipeline will look like this (iOS):
 
 To run andoroid CI, change pipeline file to run `android.yml`
 
-![CI pipeline settings on Semaphore](images/pipeline-settings.png)
+![CI pipeline settings on Semaphore](images/pipeline-settings.png =100x100)
 
 The CI pipeline will look like this (Android):
 

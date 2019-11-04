@@ -35,11 +35,6 @@ platform :ios do
 end
 
 platform :android do
-  before_all do
-    # installed via the semaphore plugin with `fastlane add_plugin semaphore`
-    # setup_semaphore
-  end
-
   desc "Build"
   desc "Build without code sign. Just to see if the build is working"
   lane :build do |options|

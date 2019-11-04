@@ -10,11 +10,15 @@ project](https://docs.semaphoreci.com/article/63-your-first-project).
 
 The CI pipeline will look like this (iOS):
 
-![CI pipeline on Semaphore](images/ci-pipeline.png)
+![CI iOS pipeline on Semaphore](images/ci-pipeline-ios.png)
+
+To run andoroid CI, change pipeline file to run `android.yml`
+
+![CI pipeline settings on Semaphore](images/pipeline-settings.png)
 
 The CI pipeline will look like this (Android):
 
-![CI pipeline on Semaphore](images/ci-pipeline.png)
+![CI adnroid pipeline on Semaphore](images/ci-pipeline-android.png)
 
 The example pipeline contains 4 blocks:
 

@@ -54,8 +54,8 @@ blocks:
             - pod install
             - cd ..
             # build and test
-            - detox build --configuration ios.sim.release
-            - detox test --configuration ios.sim.release --cleanup
+            - npm run detox-ios-build-release
+            - npm run detox-ios-test-release
 promotions:
 - name: Build app
   pipeline_file: release-build.yml

@@ -57,8 +57,6 @@ blocks:
             # build and test
             - npm run detox-android-build-release
             - npm run detox-android-test-release
-            # - detox build --configuration android.emu.release
-            # - detox test --configuration android.emu.release --cleanup
 promotions:
 - name: Build app
   pipeline_file: release-build-android.yml

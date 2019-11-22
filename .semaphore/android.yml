@@ -57,6 +57,7 @@ blocks:
             # build and test
             - npm run detox-android-build-release
             - npm run detox-android-test-release
+            - artifact push project android/app/build/outputs/apk/release/app-release.apk
 promotions:
 - name: Build app
   pipeline_file: release-build-android.yml

@@ -53,6 +53,7 @@ blocks:
             - pod install
             - cd ..
             # build and test
+            - npm run detox-clean-and-build-cache
             - npm run detox-ios-build-release
             - npm run detox-ios-test-release
 promotions:

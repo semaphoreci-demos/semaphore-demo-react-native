@@ -48,7 +48,6 @@ blocks:
             # Install dependencies for detox.js
             - brew tap wix/brew
             - brew install applesimutils
-            - npm install -g detox
             - cache restore
             - cd ios
             - pod install

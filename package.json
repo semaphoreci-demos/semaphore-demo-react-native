@@ -15,6 +15,7 @@
     "detox-android-test": "detox test --configuration android.emu.debug",
     "detox-android-build-release": "detox build --configuration android.emu.release",
     "detox-android-test-release": "detox test --configuration android.emu.release --cleanup --headless",
+    "detox-clean-and-build-cache": "detox clean-framework-cache && detox build-framework-cache",
     "lint": "eslint *.js **/*.js ",
     "fastline-build-ios": "bundle exec fastlane ios build",
     "fastline-build-android": "bundle exec fastlane android build --verbose"
@@ -28,7 +29,7 @@
     "@babel/runtime": "^7.6.3",
     "@react-native-community/eslint-config": "^0.0.5",
     "babel-jest": "^24.9.0",
-    "detox": "^14.4.1",
+    "detox": "^14.8.1",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "eslint": "6.1.0",

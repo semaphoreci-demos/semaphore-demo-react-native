@@ -8,6 +8,7 @@ agent:
       image: semaphoreci/android:29-node
 blocks:
   - name: Install dependencies
+    dependencies: []
     task:
       jobs:
         - name: npm install and cache
@@ -25,6 +26,8 @@ blocks:
             # further blocks:
             - cache store
   - name: Run linter
+    dependencies:
+      - Install dependencies
     task:
       prologue:
         commands:
@@ -35,6 +38,8 @@ blocks:
             - cache restore
             - npm run lint
   - name: Run iOS tests
+    dependencies:
+      - Run linter
     task:
       agent:
         machine:
@@ -64,6 +69,8 @@ blocks:
             - npm run detox-ios-test-release
             - artifact push workflow ios/build/Build/Products/Release-iphonesimulator/ReactNativeSemaphoreNew.app
   - name: Run Android tests
+    dependencies:
+      - Run linter
     task:
       prologue:
         commands:

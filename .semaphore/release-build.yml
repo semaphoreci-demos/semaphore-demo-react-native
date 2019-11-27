@@ -1,7 +1,14 @@
 version: v1.0
 name: "Build the app using fastline"
+agent:
+  machine:
+    type: e1-standard-2
+  containers:
+    - name: main
+      image: semaphoreci/android:29-node
 blocks:
   - name: Build app iOS
+    dependencies: []
     task:
       agent:
         machine:
@@ -30,13 +37,8 @@ blocks:
             # and https://shift.infinite.red/simple-react-native-ios-releases-4c28bb53a97b
             - npm run fastline-build-ios
   - name: Build app Android
+    dependencies: []
     task:
-      agent:
-        machine:
-          type: e1-standard-2
-        containers:
-          - name: main
-            image: semaphoreci/android:29-node
       env_vars:
         - name: LANG
           value: en_US.UTF-8

@@ -87,10 +87,9 @@ blocks:
             - npm test
         - name: e2e tests
           commands:
-            # Install dependencies for detox.js
-            - npm install -g detox
             - cache restore
             # build and test
+            - npm run detox-clean-and-build-cache
             - npm run detox-android-build-release
             - npm run detox-android-test-release
             - artifact push workflow android/app/build/outputs/apk/release/app-release.apk

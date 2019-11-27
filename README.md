@@ -8,11 +8,20 @@ on Semaphore 2.0. (Uses [React Native CLI Quickstart](https://facebook.github.io
 1. Fork this repository and use it to [create a
 project](https://docs.semaphoreci.com/article/63-your-first-project).
 
+
+The CI pipeline will look like this:
+
+![CI pipeline on Semaphore](images/ci-pipeline.png)
+
+To run just iOS CI, change pipeline file to run `ios.yml`:
+
+<img src="images/pipeline-settings-ios.png" height="300px">
+
 The CI pipeline will look like this (iOS):
 
 ![CI iOS pipeline on Semaphore](images/ci-pipeline-ios.png)
 
-To run andoroid CI, change pipeline file to run `android.yml`:
+To run just Andoroid CI, change pipeline file to run `android.yml`:
 
 <img src="images/pipeline-settings.png" height="300px">
 

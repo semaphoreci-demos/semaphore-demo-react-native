@@ -1,3 +1,5 @@
+![CI status](https://semaphore-demos.semaphoreci.com/badges/semaphore-demo-react-native.svg)
+
 # Semaphore demo CI/CD pipeline using React Native
 
 Example application and CI/CD pipeline showing how to run a React Native project

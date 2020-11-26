@@ -77,9 +77,9 @@ blocks:
           # Download source code from GitHub:
           - checkout
           # Install android emulator
-          - sdkmanager "platform-tools" "platforms;android-29" "emulator"
-          - sdkmanager "system-images;android-29;default;armeabi-v7a"
-          - echo no | avdmanager create avd -n Nexus_S_API_24 -k "system-images;android-29;default;armeabi-v7a" --device "Nexus S"
+          - sdkmanager "platform-tools" "platforms;android-24" "emulator"
+          - sdkmanager "system-images;android-24;default;x86"
+          - echo no | avdmanager create avd -n Nexus_S_API_24 -k "system-images;android-24;default;x86" --device "Nexus S"
       jobs:
         - name: unit and integration tests
           commands:

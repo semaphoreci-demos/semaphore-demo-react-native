@@ -87,3 +87,4 @@ $ npm run detox-android-test
 Copyright (c) 2019 Rendered Text
 
 Distributed under the MIT License. See the file [LICENSE.md](./LICENSE.md).
+

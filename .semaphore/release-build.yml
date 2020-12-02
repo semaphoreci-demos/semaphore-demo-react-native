@@ -1,5 +1,5 @@
 version: v1.0
-name: "Build the app using fastline"
+name: "Build the app using fastlane"
 agent:
   machine:
     type: e1-standard-2
@@ -35,7 +35,7 @@ blocks:
             # Gym builds and packages iOS apps.
             # See https://docs.fastlane.tools/actions/build_app/
             # and https://shift.infinite.red/simple-react-native-ios-releases-4c28bb53a97b
-            - npm run fastline-build-ios
+            - npm run fastlane-build-ios
   - name: Build app Android
     dependencies: []
     task:
@@ -57,4 +57,4 @@ blocks:
       jobs:
         - name: Fastlane build
           commands:
-            - npm run fastline-build-android
+            - npm run fastlane-build-android

@@ -1,5 +1,5 @@
 version: v1.0
-name: "Build the app using fastline"
+name: "Build the app using fastlane"
 agent:
   machine:
     type: e1-standard-2
@@ -27,4 +27,4 @@ blocks:
       jobs:
         - name: Fastlane build
           commands:
-            - npm run fastline-build-android
+            - npm run fastlane-build-android

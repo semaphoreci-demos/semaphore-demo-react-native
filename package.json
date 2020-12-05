@@ -16,29 +16,31 @@
     "detox-android-build-release": "detox build --configuration android.emu.release",
     "detox-android-test-release": "detox test --configuration android.emu.release --cleanup --headless",
     "detox-clean-and-build-cache": "detox clean-framework-cache && detox build-framework-cache",
-    "lint": "eslint *.js **/*.js ",
+    "lint": "eslint \"**/*.js\"",
     "fastlane-build-ios": "bundle exec fastlane ios build",
     "fastlane-build-android": "bundle exec fastlane android build --verbose"
   },
   "dependencies": {
-    "react": "16.9.0",
-    "react-native": "0.61.2"
+    "react": "17.0.1",
+    "react-native": "0.64.0-rc.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/runtime": "^7.6.3",
-    "@react-native-community/eslint-config": "^0.0.5",
-    "babel-jest": "^24.9.0",
-    "detox": "^14.8.1",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.15.1",
-    "eslint": "6.1.0",
-    "eslint-plugin-react": "^7.16.0",
-    "jest": "^24.9.0",
-    "jest-enzyme": "^7.1.1",
-    "metro-react-native-babel-preset": "^0.56.0",
-    "react-dom": "^16.10.2",
-    "react-test-renderer": "16.9.0"
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.3.2",
+    "babel-jest": "^25.1.0",
+    "detox": "^17.14.3",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "eslint": "7.14.0",
+    "eslint-plugin-react": "^7.21.5",
+    "jest": "^26.6.3",
+    "jest-enzyme": "^7.1.2",
+    "metro-react-native-babel-preset": "^0.64.0",
+    "react-dom": "^17.0.1",
+    "react-native-codegen": "^0.0.6",
+    "react-test-renderer": "17.0.1"
   },
   "jest": {
     "preset": "react-native",
@@ -55,13 +57,13 @@
     "configurations": {
       "ios.sim.debug": {
         "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/ReactNativeSemaphoreNew.app",
-        "build": "xcodebuild -workspace ios/ReactNativeSemaphoreNew.xcworkspace -scheme ReactNativeSemaphoreNew -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build -UseModernBuildSystem=NO",
+        "build": "xcodebuild ONLY_ACTIVE_ARCH=YES -workspace ios/ReactNativeSemaphoreNew.xcworkspace -scheme ReactNativeSemaphoreNew -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build -UseModernBuildSystem=NO",
         "type": "ios.simulator",
         "name": "iPhone 8"
       },
       "ios.sim.release": {
         "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/ReactNativeSemaphoreNew.app",
-        "build": "xcodebuild -workspace ios/ReactNativeSemaphoreNew.xcworkspace -scheme ReactNativeSemaphoreNew -configuration Release -sdk iphonesimulator -derivedDataPath ios/build -UseModernBuildSystem=NO",
+        "build": "xcodebuild ONLY_ACTIVE_ARCH=YES -workspace ios/ReactNativeSemaphoreNew.xcworkspace -scheme ReactNativeSemaphoreNew -configuration Release -sdk iphonesimulator -derivedDataPath ios/build -UseModernBuildSystem=NO",
         "type": "ios.simulator",
         "name": "iPhone 8"
       },

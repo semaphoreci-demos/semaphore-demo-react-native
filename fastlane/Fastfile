@@ -24,10 +24,13 @@ platform :ios do
   desc "Build"
   desc "Build without code sign. Just to see if the build is working"
   lane :build do |options|
-    gym(
+    build_app(
+      workspace: "./ios/ReactNativeSemaphoreNew.xcworkspace",
       scheme: "ReactNativeSemaphoreNew",
       skip_package_ipa: true,
       skip_archive: true,
+      skip_codesigning: true,
+      xcargs: "ONLY_ACTIVE_ARCH=YES", # since for this demo we skip_codesigning, the build will be done for a simulator, and since XCode 12, this means arm64, thus build failing. Semaphore is running on x86 chips.
       silent: true,
       clean: true
     )

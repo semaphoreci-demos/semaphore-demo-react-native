@@ -14,6 +14,6 @@ module.exports = {
     jest: true,
     jasmine: true,
     beforeAll: true,
-    afterAll: true
-  }
+    afterAll: true,
+  },
 };

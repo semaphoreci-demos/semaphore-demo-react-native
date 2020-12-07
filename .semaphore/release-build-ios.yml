@@ -3,7 +3,7 @@ name: "Build the app using fastlane"
 agent:
   machine:
     type: a1-standard-4
-    os_image: macos-xcode11
+    os_image: macos-xcode12
 blocks:
   - name: Build app
     task:
@@ -22,6 +22,11 @@ blocks:
           - cache restore
           - bundle install --path vendor/bundle
           - cache store
+
+          # setup cocoapods
+          - cd ios
+          - pod install
+          - cd ..
       jobs:
         - name: Fastlane build
           commands:

@@ -82,6 +82,10 @@ $ npm run detox-android-build
 $ npm run detox-android-test
 ```
 
+## Troubleshooting
+
+If while runing your end to end tests on iOS you get this error `#error Unsupported architecture` make sure that the detox configuration uses the `ONLY_ACTIVE_ARCH=YES` flag as shown in the [package.json](./package.json) file.
+
 ## License
 
 Copyright (c) 2019 Rendered Text

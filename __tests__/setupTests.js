@@ -2,30 +2,8 @@
 
 import 'react-native';
 import 'jest-enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import Adapter from '@wojtekmaj/enzyme-adapter-react-17'; //TODO: replace this with enzyme-adapter-react-17 when official react 17 support is added
 import Enzyme from 'enzyme';
-
-/**
- * Set up DOM in node.js environment for Enzyme to mount to
- */
-import {JSDOM} from 'jsdom';
-
-const jsdom = new JSDOM('<!doctype html><html><body></body></html>');
-const {window} = jsdom;
-
-function copyProps(src, target) {
-  Object.defineProperties(target, {
-    ...Object.getOwnPropertyDescriptors(src),
-    ...Object.getOwnPropertyDescriptors(target),
-  });
-}
-
-global.window = window;
-global.document = window.document;
-global.navigator = {
-  userAgent: 'node.js',
-};
-copyProps(window, global);
 
 /**
  * Set up Enzyme to mount to DOM, simulate events,

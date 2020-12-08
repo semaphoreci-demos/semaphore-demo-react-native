@@ -23,7 +23,7 @@ The CI pipeline will look like this (iOS):
 
 ![CI iOS pipeline on Semaphore](images/ci-pipeline-ios.png)
 
-To run just Andoroid CI, change pipeline file to run `android.yml`:
+To run just Android CI, change pipeline file to run `android.yml`:
 
 <img src="images/pipeline-settings.png" height="300px">
 
@@ -34,7 +34,7 @@ The CI pipeline will look like this (Android):
 The example pipeline contains 4 blocks:
 
  - Install dependencies
-    -  installs and caches all npm dependencies
+    -  Installs and caches all npm dependencies
  - Run linter
     - Lint the code using [eslint](https://eslint.org/) with [@react-native-community/eslint-config](https://www.npmjs.com/package/@react-native-community/eslint-config)
  - Run tests

@@ -54,20 +54,6 @@ blocks:
           commands:
             - cache restore
             - npm test
-        - name: e2e tests
-          commands:
-            # Install dependencies for detox.js
-            - brew tap wix/brew
-            - brew install applesimutils
-            - cache restore
-            - cd ios
-            - pod install
-            - cd ..
-            # build and test
-            - npm run detox-clean-and-build-cache
-            - npm run detox-ios-build-release
-            - npm run detox-ios-test-release
-            - artifact push workflow ios/build/Build/Products/Release-iphonesimulator/ReactNativeSemaphoreNew.app
   - name: Run Android tests
     dependencies:
       - Run linter
@@ -85,14 +71,6 @@ blocks:
           commands:
             - cache restore
             - npm test
-        - name: e2e tests
-          commands:
-            - cache restore
-            # build and test
-            - npm run detox-clean-and-build-cache
-            - npm run detox-android-build-release
-            - npm run detox-android-test-release
-            - artifact push workflow android/app/build/outputs/apk/release/app-release.apk
 promotions:
 - name: Build app
   pipeline_file: release-build.yml

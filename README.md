@@ -88,6 +88,6 @@ If while runing your end to end tests on iOS you get this error `#error Unsuppor
 
 ## License
 
-Copyright (c) 2019 Rendered Text
+Copyright (c) 2020 Rendered Text
 
 Distributed under the MIT License. See the file [LICENSE.md](./LICENSE.md).

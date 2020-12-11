@@ -10,7 +10,7 @@ blocks:
       jobs:
         - name: npm install and cache
           commands:
-            # Get the latest version of our source code from GitHub:
+            # Get the latest version of our source code from GitHub: 
             - checkout
             # Restore dependencies from cache. This command will not fail in
             # case of a cache miss. In case of a cache hit, npm install will

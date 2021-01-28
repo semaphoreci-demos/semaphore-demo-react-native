@@ -10,17 +10,9 @@ blocks:
       jobs:
         - name: npm install and cache
           commands:
-            # Get the latest version of our source code from GitHub:
             - checkout
-            # Restore dependencies from cache. This command will not fail in
-            # case of a cache miss. In case of a cache hit, npm install will
-            # run very fast.
-            # For more info on caching, see https://docs.semaphoreci.com/article/68-caching-dependencies
             - cache restore
             - npm install
-
-            # Store the latest version of node modules in cache to reuse in
-            # further blocks:
             - cache store
   - name: Run linter
     task:
@@ -36,7 +28,6 @@ blocks:
     task:
       prologue:
         commands:
-          # Download source code from GitHub:
           - checkout
       jobs:
         - name: unit and integration tests
@@ -45,22 +36,20 @@ blocks:
             - npm test
         - name: e2e tests
           commands:
-            # Install dependencies for detox.js
             - brew tap wix/brew
             - brew install applesimutils
             - cache restore
             - cd ios
             - pod install
             - cd ..
-            # build and test
             - npm run detox-clean-and-build-cache
             - npm run detox-ios-build-release
             - npm run detox-ios-test-release
             - artifact push workflow ios/build/Build/Products/Release-iphonesimulator/ReactNativeSemaphoreNew.app
 promotions:
-- name: Build app
-  pipeline_file: release-build-ios.yml
-  auto_promote_on:
-  - result: passed
-    branch:
-    - master
+  - name: Build app
+    pipeline_file: release-build-ios.yml
+    auto_promote_on:
+      - result: passed
+        branch:
+          - master

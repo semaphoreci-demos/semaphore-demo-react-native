@@ -3,6 +3,7 @@ name: Semaphore React Native iOS Example Pipeline
 agent:
   machine:
     type: e1-standard-2
+    os_image: ubuntu1804
   containers:
     - name: main
       image: 'registry.semaphoreci.com/android:29-node'
@@ -13,17 +14,9 @@ blocks:
       jobs:
         - name: npm install and cache
           commands:
-            # Get the latest version of our source code from GitHub:
             - checkout
-            # Restore dependencies from cache. This command will not fail in
-            # case of a cache miss. In case of a cache hit, npm install will
-            # run very fast.
-            # For more info on caching, see https://docs.semaphoreci.com/article/68-caching-dependencies
             - cache restore
             - npm install
-
-            # Store the latest version of node modules in cache to reuse in
-            # further blocks:
             - cache store
   - name: Run linter
     dependencies:
@@ -47,7 +40,6 @@ blocks:
           os_image: macos-xcode12
       prologue:
         commands:
-          # Download source code from GitHub:
           - checkout
       jobs:
         - name: unit and integration tests
@@ -56,14 +48,12 @@ blocks:
             - npm test
         - name: e2e tests
           commands:
-            # Install dependencies for detox.js
             - brew tap wix/brew
             - brew install applesimutils
             - cache restore
             - cd ios
             - pod install
             - cd ..
-            # build and test
             - npm run detox-clean-and-build-cache
             - npm run detox-ios-build-release
             - npm run detox-ios-test-release
@@ -74,9 +64,7 @@ blocks:
     task:
       prologue:
         commands:
-          # Download source code from GitHub:
           - checkout
-          # Install android emulator
           - sdkmanager "platform-tools" "platforms;android-24" "emulator"
           - sdkmanager "system-images;android-24;default;x86"
           - echo no | avdmanager create avd -n Nexus_S_API_24 -k "system-images;android-24;default;x86" --device "Nexus S"
@@ -88,15 +76,14 @@ blocks:
         - name: e2e tests
           commands:
             - cache restore
-            # build and test
             - npm run detox-clean-and-build-cache
             - npm run detox-android-build-release
             - npm run detox-android-test-release
             - artifact push workflow android/app/build/outputs/apk/release/app-release.apk
 promotions:
-- name: Build app
-  pipeline_file: release-build.yml
-  auto_promote_on:
-  - result: passed
-    branch:
-    - master
+  - name: Build app
+    pipeline_file: release-build.yml
+    auto_promote_on:
+      - result: passed
+        branch:
+          - master

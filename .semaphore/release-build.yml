@@ -27,6 +27,7 @@ blocks:
           # complete in about a second.
           # For more info on caching, see https://docs.semaphoreci.com/article/68-caching-dependencies
           - cache restore
+          - gem install bundler -v '2.1.4'
           - bundle install --path vendor/bundle
           - cache store
 

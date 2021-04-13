@@ -22,36 +22,34 @@
   },
   "dependencies": {
     "react": "17.0.1",
-    "react-native": "0.64.0-rc.1"
+    "react-native": "0.64.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/runtime": "^7.8.4",
     "@react-native-community/eslint-config": "^1.1.0",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.3.2",
     "babel-jest": "^25.1.0",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "detox": "^17.14.3",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
     "eslint": "7.14.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-jest": "^24.3.5",
+    "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.21.5",
     "jest": "^26.6.3",
     "jest-enzyme": "^7.1.2",
     "metro-react-native-babel-preset": "^0.64.0",
+    "prettier": "^2.2.1",
     "react-dom": "^17.0.1",
     "react-native-codegen": "^0.0.6",
-    "react-test-renderer": "17.0.1"
-  },
-  "jest": {
-    "preset": "react-native",
-    "setupFilesAfterEnv": [
-      "<rootDir>__tests__/setupTests.js"
-    ],
-    "testPathIgnorePatterns": [
-      "setupTests.js",
-      "node_modules",
-      "e2e"
-    ]
+    "react-test-renderer": "17.0.1",
+    "typescript": "^4.2.4"
   },
   "detox": {
     "configurations": {

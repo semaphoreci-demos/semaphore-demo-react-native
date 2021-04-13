@@ -2,8 +2,6 @@
  * Sample React Native App
  * https://github.com/facebook/react-native
  *
- * @format
- * @flow
  */
 
 import React, {useState} from 'react';
@@ -25,7 +23,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-const App = () => {
+const App: React.FC = () => {
   const [isToggled, setIsToggled] = useState(false);
 
   const handleToggle = () => setIsToggled(!isToggled);

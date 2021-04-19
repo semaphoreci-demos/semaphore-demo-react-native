@@ -1,6 +1,6 @@
 import 'react-native';
 import React from 'react';
-import { render, fireEvent } from '@testing-library/react-native';
+import {render, fireEvent} from '@testing-library/react-native';
 
 // import { render } from 'utils/testWrapper';
 import Button from '../index';
@@ -16,7 +16,7 @@ describe('<Button />', () => {
     const testID = 'button';
 
     // Rendering Button component using react-native-test-renderer.
-    const { getByTestId } = await render(
+    const {getByTestId} = await render(
       <Button testID={testID} onPress={onPress} label="Button" />,
     );
 

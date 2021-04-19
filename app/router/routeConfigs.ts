@@ -1,4 +1,4 @@
-import { HOME, SEARCH } from './routeNames';
+import {HOME, SEARCH} from './routeNames';
 
 const routeConfigs = {
   [SEARCH]: {

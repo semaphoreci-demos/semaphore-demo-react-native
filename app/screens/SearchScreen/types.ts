@@ -1,15 +1,15 @@
-import { RouteProp } from '@react-navigation/native';
-import { StackNavigationProp } from '@react-navigation/stack';
-import { RootStackParamList } from 'router/types';
+import {RouteProp} from '@react-navigation/native';
+import {StackNavigationProp} from '@react-navigation/stack';
+import {RootStackParamList} from 'router/types';
 
-type SearhScreenRouteProp = RouteProp<RootStackParamList, 'Search'>;
+type SearchScreenRouteProp = RouteProp<RootStackParamList, 'Search'>;
 
-type SearhScreenNavigationProp = StackNavigationProp<
+type SearchScreenNavigationProp = StackNavigationProp<
   RootStackParamList,
   'Search'
 >;
 
-export type SearhScreenProps = {
-  route: SearhScreenRouteProp;
-  navigation: SearhScreenNavigationProp;
+export type SearchScreenProps = {
+  route: SearchScreenRouteProp;
+  navigation: SearchScreenNavigationProp;
 };

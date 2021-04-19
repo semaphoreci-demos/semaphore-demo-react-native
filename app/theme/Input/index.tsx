@@ -5,10 +5,10 @@
  */
 import omit from 'lodash/omit';
 import React from 'react';
-import { TextInput, TextInputProps } from 'react-native';
+import {TextInput, TextInputProps} from 'react-native';
 
 import Text from 'theme/Text';
-import style, { inputStyleProps } from './style';
+import style, {inputStyleProps} from './style';
 
 export interface InputProps extends TextInputProps {
   error?: string | React.ReactNode;
@@ -34,6 +34,7 @@ const Input = React.forwardRef(
           props.label ? style.inputWithLabel : {},
           props.error ? style.errorInput : {},
           props.multiline ? style.multiline : {},
+          props.style,
         ]}
       />
       {props.error ? (

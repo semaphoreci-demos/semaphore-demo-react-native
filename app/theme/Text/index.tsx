@@ -5,7 +5,7 @@
  */
 
 import React from 'react';
-import { Animated, Text as RNText, StyleSheet } from 'react-native';
+import {Animated, Text as RNText, StyleSheet} from 'react-native';
 import Colors from 'theme/Colors';
 
 const defaultStyle = StyleSheet.create({
@@ -18,7 +18,7 @@ const defaultStyle = StyleSheet.create({
 export interface TextProps {
   animated?: boolean;
   testID?: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 const Text: React.FC<TextProps> = ({

@@ -3,11 +3,11 @@
  * Button
  *
  */
-import React, { useEffect, useRef } from 'react';
-import { Animated } from 'react-native';
+import React, {useEffect, useRef} from 'react';
+import {Animated} from 'react-native';
 
 import Text from 'theme/Text';
-import TouchFeedback, { TouchFeedbackProps } from 'theme/TouchFeedback';
+import TouchFeedback, {TouchFeedbackProps} from 'theme/TouchFeedback';
 
 import style from './style';
 
@@ -23,7 +23,7 @@ const typeForeground = {
 };
 
 interface ButtonProps extends TouchFeedbackProps {
-  onPress: (...args: any[]) => any;
+  onPress: (...args: unknown[]) => void;
   label: string | React.ReactNode;
   mini?: boolean;
   flex?: boolean;

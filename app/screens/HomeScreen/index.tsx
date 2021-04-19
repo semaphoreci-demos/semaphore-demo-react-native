@@ -1,5 +1,10 @@
+/**
+ *
+ * Home Screen
+ *
+ */
+
 import React, {useState} from 'react';
-// import Text from 'theme/Text';
 import {ScrollView, Text, View, Switch} from 'react-native';
 
 import {
@@ -23,7 +28,8 @@ function HomeScreen(props: HomeScreenProps): React.ReactChild {
   return (
     <ScrollView
       contentInsetAdjustmentBehavior="automatic"
-      style={styles.scrollView}>
+      style={styles.scrollView}
+      testID="homeScreen">
       <Header />
       {global.HermesInternal == null ? null : (
         <View style={styles.engine}>

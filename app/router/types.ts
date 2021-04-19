@@ -1,4 +1,4 @@
 export type RootStackParamList = {
-  Home: {};
-  Search: {};
+  Home?: Record<string, unknown>;
+  Search?: Record<string, unknown>;
 };

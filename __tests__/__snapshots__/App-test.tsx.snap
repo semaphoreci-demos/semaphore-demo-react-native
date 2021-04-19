@@ -294,6 +294,7 @@ exports[`jest snapshot tests renders correctly 1`] = `
                           "backgroundColor": "#ffffff",
                         }
                       }
+                      testID="homeScreen"
                     >
                       <View>
                         <View

@@ -5,6 +5,7 @@ import {
   Animated,
   TouchableOpacity,
   TouchableNativeFeedback,
+  ViewProps,
 } from 'react-native';
 
 const AnimatedOpacity = Animated.createAnimatedComponent(TouchableOpacity);
@@ -13,11 +14,10 @@ const AnimatedNative = Animated.createAnimatedComponent(
 );
 const RIPPLE = Platform.OS === 'android' && Platform.Version >= 21;
 
-export interface TouchFeedbackProps {
-  style?: number | any[];
+export interface TouchFeedbackProps extends ViewProps {
   ripple?: boolean;
   animated?: boolean;
-  onPress: (...args: any[]) => any;
+  onPress: (...args: unknown[]) => void;
   testID?: string;
 }
 

@@ -4,7 +4,7 @@
  *
  */
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import {StyleSheet, View} from 'react-native';
 
 import Text from 'theme/Text';
 import Dimensions from 'theme/Dimensions';

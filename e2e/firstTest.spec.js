@@ -5,6 +5,7 @@ describe('App', () => {
 
   it('should show app screen text', async () => {
     await expect(element(by.text('Step One'))).toBeVisible();
+    element(by.id('homeScreen')).scroll(200);
     await expect(element(by.text('See Your Changes'))).toBeVisible();
   });
 

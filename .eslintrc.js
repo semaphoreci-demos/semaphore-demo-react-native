@@ -8,7 +8,7 @@ module.exports = {
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
   ],
-  plugins: ['prettier', 'jest'],
+  plugins: ['prettier', 'jest', 'testing-library'],
   overrides: [
     {
       files: ['*.ts', '*.tsx'],

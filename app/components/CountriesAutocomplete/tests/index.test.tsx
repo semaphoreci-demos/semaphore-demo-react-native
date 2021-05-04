@@ -13,7 +13,7 @@ describe('<CountriesAutocomplete />', () => {
     // Mocking onPress method so we can check if its called or not
     const onSelect = jest.fn();
 
-    // Rendering Button component using react-native-test-renderer.
+    // Rendering Button component using RNTL.
     const autocomplete = await render(
       <CountriesAutocomplete onSelect={onSelect} />,
     );

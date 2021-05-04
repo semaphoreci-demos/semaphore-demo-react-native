@@ -16,7 +16,7 @@ describe('Select Country', () => {
    */
   it('should navigate to search screen', async () => {
     await element(by.id('searchButton')).tap();
-    await expect(element(by.id('searchScreen'))).toBeVisible().withTimeout(5000);
+    await expect(element(by.id('searchScreen'))).toBeVisible();
   });
 
   /**

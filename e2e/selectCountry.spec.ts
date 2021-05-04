@@ -19,7 +19,7 @@ describe('Select Country', () => {
     await waitFor(element(by.id('searchScreen')))
       .toExist()
       .withTimeout(5000);
-    await expect(element(by.id('searchScreen'))).toBeVisible();
+    await expect(element(by.id('searchScreen'))).toExist();
   });
 
   /**

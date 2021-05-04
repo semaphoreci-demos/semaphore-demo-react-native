@@ -1,4 +1,4 @@
-import {expect, device, element, by} from 'detox';
+import { expect, device, element, by, waitFor } from 'detox';
 
 const COUNTRY_NAME = 'Serbia';
 const OTHER_COUNTRY_NAME = 'United States';
@@ -16,6 +16,9 @@ describe('Select Country', () => {
    */
   it('should navigate to search screen', async () => {
     await element(by.id('searchButton')).tap();
+    await waitFor(element(by.id('searchScreen')))
+      .toExist()
+      .withTimeout(5000);
     await expect(element(by.id('searchScreen'))).toBeVisible();
   });
 

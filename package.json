@@ -10,7 +10,7 @@
     "detox-ios-build": "detox build --configuration ios.sim.debug",
     "detox-ios-test": "detox test --configuration ios.sim.debug",
     "detox-ios-build-release": "detox build --configuration ios.sim.release",
-    "detox-ios-test-release": "detox test --configuration ios.sim.release --cleanup",
+    "detox-ios-test-release": "detox test --configuration ios.sim.release --cleanup --loglevel verbose",
     "detox-android-build": "detox build --configuration android.emu.debug",
     "detox-android-test": "detox test --configuration android.emu.debug",
     "detox-android-build-release": "detox build --configuration android.emu.release",

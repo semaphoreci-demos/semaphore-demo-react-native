@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": ["es6"],
+    "allowJs": true,
+    "checkJs": true,
+    "jsx": "react-native",
+    "declaration": false,
+    "removeComments": true,
+    "noEmit": true,
+    "isolatedModules": false,
+    "strict": true,
+    "noImplicitAny": false,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "Node",
+    "baseUrl": "./app",
+    "types": ["jest"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "./index.d.ts",
+    "./app/**/*.ts",
+    "./app/**/*.tsx",
+    "./types/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js",
+    "app/**/*.js",
+    "app/**/*.jsx",
+    "e2e/*"
+  ]
+}

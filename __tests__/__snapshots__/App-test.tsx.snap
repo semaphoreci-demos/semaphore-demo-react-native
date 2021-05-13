@@ -1,0 +1,1158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`jest snapshot tests renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <RNCSafeAreaProvider
+    onInsetsChange={[Function]}
+    style={
+      Array [
+        Object {
+          "flex": 1,
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      pointerEvents="box-none"
+      style={
+        Object {
+          "zIndex": 1,
+        }
+      }
+    >
+      <View
+        accessibilityElementsHidden={false}
+        importantForAccessibility="auto"
+        onLayout={[Function]}
+        pointerEvents="box-none"
+        style={null}
+      >
+        <View
+          pointerEvents="box-none"
+          style={
+            Object {
+              "bottom": 0,
+              "left": 0,
+              "opacity": 1,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "zIndex": 0,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "rgb(255, 255, 255)",
+                "borderBottomColor": "rgb(216, 216, 216)",
+                "flex": 1,
+                "shadowColor": "rgb(216, 216, 216)",
+                "shadowOffset": Object {
+                  "height": 0.5,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.85,
+                "shadowRadius": 0,
+              }
+            }
+          />
+        </View>
+        <View
+          pointerEvents="box-none"
+          style={
+            Object {
+              "height": NaN,
+              "maxHeight": undefined,
+              "minHeight": undefined,
+              "opacity": undefined,
+              "transform": undefined,
+            }
+          }
+        >
+          <View
+            pointerEvents="none"
+            style={
+              Object {
+                "height": undefined,
+              }
+            }
+          />
+          <View
+            pointerEvents="box-none"
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "justifyContent": "center",
+              }
+            }
+          >
+            <View
+              pointerEvents="box-none"
+              style={
+                Object {
+                  "marginHorizontal": 16,
+                  "opacity": 1,
+                }
+              }
+            >
+              <Text
+                accessibilityRole="header"
+                aria-level="1"
+                numberOfLines={1}
+                onLayout={[Function]}
+                style={
+                  Object {
+                    "color": "rgb(28, 28, 30)",
+                    "fontSize": 17,
+                    "fontWeight": "600",
+                  }
+                }
+              >
+                Home
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <RNSScreenContainer
+      onLayout={[Function]}
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <RNSScreen
+        activityState={2}
+        forwardedRef={[Function]}
+        pointerEvents="box-none"
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      >
+        <View
+          collapsable={false}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        />
+        <View
+          accessibilityElementsHidden={false}
+          closing={false}
+          gestureVelocityImpact={0.3}
+          importantForAccessibility="auto"
+          onClose={[Function]}
+          onGestureBegin={[Function]}
+          onGestureCanceled={[Function]}
+          onGestureEnd={[Function]}
+          onOpen={[Function]}
+          onTransition={[Function]}
+          pointerEvents="box-none"
+          style={
+            Array [
+              Object {
+                "overflow": undefined,
+              },
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+            ]
+          }
+          transitionSpec={
+            Object {
+              "close": Object {
+                "animation": "spring",
+                "config": Object {
+                  "damping": 500,
+                  "mass": 3,
+                  "overshootClamping": true,
+                  "restDisplacementThreshold": 10,
+                  "restSpeedThreshold": 10,
+                  "stiffness": 1000,
+                },
+              },
+              "open": Object {
+                "animation": "spring",
+                "config": Object {
+                  "damping": 500,
+                  "mass": 3,
+                  "overshootClamping": true,
+                  "restDisplacementThreshold": 10,
+                  "restSpeedThreshold": 10,
+                  "stiffness": 1000,
+                },
+              },
+            }
+          }
+        >
+          <View
+            needsOffscreenAlphaCompositing={false}
+            pointerEvents="box-none"
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          >
+            <View
+              collapsable={false}
+              forwardedRef={[Function]}
+              onGestureHandlerEvent={[Function]}
+              onGestureHandlerStateChange={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                  "transform": Array [
+                    Object {
+                      "translateX": 0,
+                    },
+                    Object {
+                      "translateX": 0,
+                    },
+                  ],
+                }
+              }
+            >
+              <View
+                pointerEvents="none"
+                style={
+                  Object {
+                    "backgroundColor": "rgb(242, 242, 242)",
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "shadowColor": "#000",
+                    "shadowOffset": Object {
+                      "height": 1,
+                      "width": -1,
+                    },
+                    "shadowOpacity": 0.3,
+                    "shadowRadius": 5,
+                    "top": 0,
+                    "width": 3,
+                  }
+                }
+              />
+              <View
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "overflow": "hidden",
+                    },
+                    Array [
+                      Object {
+                        "backgroundColor": "rgb(242, 242, 242)",
+                      },
+                      undefined,
+                    ],
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "flex": 1,
+                      "flexDirection": "column-reverse",
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flex": 1,
+                      }
+                    }
+                  >
+                    <RCTScrollView
+                      contentInsetAdjustmentBehavior="automatic"
+                      style={
+                        Object {
+                          "backgroundColor": "#ffffff",
+                        }
+                      }
+                      testID="homeScreen"
+                    >
+                      <View>
+                        <View
+                          accessibilityIgnoresInvertColors={true}
+                          style={
+                            Array [
+                              Object {
+                                "paddingBottom": 40,
+                                "paddingHorizontal": 32,
+                                "paddingTop": 96,
+                              },
+                              Object {
+                                "backgroundColor": "#F3F3F3",
+                              },
+                            ]
+                          }
+                        >
+                          <Image
+                            accessibilityRole="image"
+                            source={
+                              Object {
+                                "process": [Function],
+                              }
+                            }
+                            style={
+                              Array [
+                                Object {
+                                  "bottom": 0,
+                                  "left": 0,
+                                  "position": "absolute",
+                                  "right": 0,
+                                  "top": 0,
+                                },
+                                Object {
+                                  "height": undefined,
+                                  "width": undefined,
+                                },
+                                Object {
+                                  "marginBottom": -192,
+                                  "marginLeft": -128,
+                                  "opacity": 0.2,
+                                  "overflow": "visible",
+                                  "resizeMode": "cover",
+                                },
+                              ]
+                            }
+                          />
+                          <Text
+                            style={
+                              Array [
+                                Object {
+                                  "fontSize": 40,
+                                  "fontWeight": "700",
+                                  "textAlign": "center",
+                                },
+                                Object {
+                                  "color": "#000",
+                                },
+                              ]
+                            }
+                          >
+                            Welcome to
+                            
+
+                            React Native
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Object {
+                              "backgroundColor": "#ffffff",
+                            }
+                          }
+                        >
+                          <View
+                            style={
+                              Object {
+                                "flexDirection": "row",
+                                "padding": 24,
+                              }
+                            }
+                          >
+                            <View
+                              accessible={true}
+                              focusable={true}
+                              forwardedRef={[Function]}
+                              onClick={[Function]}
+                              onResponderGrant={[Function]}
+                              onResponderMove={[Function]}
+                              onResponderRelease={[Function]}
+                              onResponderTerminate={[Function]}
+                              onResponderTerminationRequest={[Function]}
+                              onStartShouldSetResponder={[Function]}
+                              style={
+                                Object {
+                                  "alignItems": "center",
+                                  "backgroundColor": "#0AB488",
+                                  "borderColor": "#0AB488",
+                                  "borderRadius": 3,
+                                  "borderWidth": 1,
+                                  "flex": 1,
+                                  "flexDirection": "row",
+                                  "justifyContent": "center",
+                                  "margin": 6,
+                                  "opacity": 1,
+                                  "padding": 12,
+                                  "paddingHorizontal": 12,
+                                }
+                              }
+                              testID="searchButton"
+                            >
+                              <Text
+                                numberOfLines={2}
+                                style={
+                                  Array [
+                                    Object {
+                                      "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    },
+                                    Object {
+                                      "color": "#111",
+                                      "fontSize": 14,
+                                      "fontWeight": "500",
+                                      "marginHorizontal": 6,
+                                      "textAlign": "center",
+                                    },
+                                    Object {
+                                      "color": "#FFFFFF",
+                                    },
+                                    Object {
+                                      "fontSize": 16,
+                                      "fontWeight": "500",
+                                    },
+                                  ]
+                                }
+                              >
+                                Search Countries
+                              </Text>
+                            </View>
+                          </View>
+                          <View
+                            style={
+                              Object {
+                                "marginTop": 32,
+                                "paddingHorizontal": 24,
+                              }
+                            }
+                          >
+                            <RCTSwitch
+                              accessibilityRole="switch"
+                              onChange={[Function]}
+                              onResponderTerminationRequest={[Function]}
+                              onStartShouldSetResponder={[Function]}
+                              style={
+                                Object {
+                                  "height": 31,
+                                  "width": 51,
+                                }
+                              }
+                              testID="toggle"
+                              value={false}
+                            />
+                            <Text
+                              style={
+                                Object {
+                                  "color": "#000000",
+                                  "fontSize": 24,
+                                  "fontWeight": "600",
+                                }
+                              }
+                            >
+                              Step One
+                            </Text>
+                            <Text
+                              style={
+                                Object {
+                                  "color": "#555",
+                                  "fontSize": 18,
+                                  "fontWeight": "400",
+                                  "marginTop": 8,
+                                }
+                              }
+                            >
+                              Edit 
+                              <Text
+                                style={
+                                  Object {
+                                    "fontWeight": "700",
+                                  }
+                                }
+                              >
+                                App.js
+                              </Text>
+                               to change this screen and then come back to see your edits.
+                            </Text>
+                          </View>
+                          <View
+                            style={
+                              Object {
+                                "marginTop": 32,
+                                "paddingHorizontal": 24,
+                              }
+                            }
+                          >
+                            <Text
+                              style={
+                                Object {
+                                  "color": "#000000",
+                                  "fontSize": 24,
+                                  "fontWeight": "600",
+                                }
+                              }
+                            >
+                              See Your Changes
+                            </Text>
+                            <Text
+                              style={
+                                Object {
+                                  "color": "#555",
+                                  "fontSize": 18,
+                                  "fontWeight": "400",
+                                  "marginTop": 8,
+                                }
+                              }
+                            >
+                              <Text>
+                                Press 
+                                <Text
+                                  style={
+                                    Object {
+                                      "fontWeight": "700",
+                                    }
+                                  }
+                                >
+                                  Cmd + R
+                                </Text>
+                                 in the simulator to reload your app's code.
+                              </Text>
+                            </Text>
+                          </View>
+                          <View
+                            style={
+                              Object {
+                                "marginTop": 32,
+                                "paddingHorizontal": 24,
+                              }
+                            }
+                          >
+                            <Text
+                              style={
+                                Object {
+                                  "color": "#000000",
+                                  "fontSize": 24,
+                                  "fontWeight": "600",
+                                }
+                              }
+                            >
+                              Debug
+                            </Text>
+                            <Text
+                              style={
+                                Object {
+                                  "color": "#555",
+                                  "fontSize": 18,
+                                  "fontWeight": "400",
+                                  "marginTop": 8,
+                                }
+                              }
+                            >
+                              <Text>
+                                Press 
+                                <Text
+                                  style={
+                                    Object {
+                                      "fontWeight": "700",
+                                    }
+                                  }
+                                >
+                                  Cmd + D
+                                </Text>
+                                 in the simulator or
+                                 
+                                <Text
+                                  style={
+                                    Object {
+                                      "fontWeight": "700",
+                                    }
+                                  }
+                                >
+                                  Shake
+                                </Text>
+                                 your device to open the React Native debug menu.
+                              </Text>
+                            </Text>
+                          </View>
+                          <View
+                            style={
+                              Object {
+                                "marginTop": 32,
+                                "paddingHorizontal": 24,
+                              }
+                            }
+                          >
+                            <Text
+                              style={
+                                Object {
+                                  "color": "#000000",
+                                  "fontSize": 24,
+                                  "fontWeight": "600",
+                                }
+                              }
+                            >
+                              Learn More
+                            </Text>
+                            <Text
+                              style={
+                                Object {
+                                  "color": "#555",
+                                  "fontSize": 18,
+                                  "fontWeight": "400",
+                                  "marginTop": 8,
+                                }
+                              }
+                            >
+                              Read the docs to discover what to do next:
+                            </Text>
+                          </View>
+                          <View
+                            style={
+                              Object {
+                                "marginTop": 32,
+                                "paddingHorizontal": 24,
+                              }
+                            }
+                          >
+                            <View
+                              style={
+                                Array [
+                                  Object {
+                                    "height": 0.5,
+                                  },
+                                  Object {
+                                    "backgroundColor": "#DAE1E7",
+                                  },
+                                ]
+                              }
+                            />
+                            <View
+                              accessibilityRole="button"
+                              accessible={true}
+                              focusable={true}
+                              onClick={[Function]}
+                              onResponderGrant={[Function]}
+                              onResponderMove={[Function]}
+                              onResponderRelease={[Function]}
+                              onResponderTerminate={[Function]}
+                              onResponderTerminationRequest={[Function]}
+                              onStartShouldSetResponder={[Function]}
+                              style={
+                                Object {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "flexWrap": "wrap",
+                                  "justifyContent": "space-between",
+                                  "opacity": 1,
+                                  "paddingVertical": 8,
+                                }
+                              }
+                            >
+                              <Text
+                                style={
+                                  Object {
+                                    "color": "#1292B4",
+                                    "flex": 2,
+                                    "fontSize": 18,
+                                    "fontWeight": "400",
+                                  }
+                                }
+                              >
+                                The Basics
+                              </Text>
+                              <Text
+                                style={
+                                  Array [
+                                    Object {
+                                      "flex": 3,
+                                      "fontSize": 18,
+                                      "fontWeight": "400",
+                                      "paddingVertical": 16,
+                                    },
+                                    Object {
+                                      "color": "#444",
+                                    },
+                                  ]
+                                }
+                              >
+                                Explains a Hello World for React Native.
+                              </Text>
+                            </View>
+                            <View
+                              style={
+                                Array [
+                                  Object {
+                                    "height": 0.5,
+                                  },
+                                  Object {
+                                    "backgroundColor": "#DAE1E7",
+                                  },
+                                ]
+                              }
+                            />
+                            <View
+                              accessibilityRole="button"
+                              accessible={true}
+                              focusable={true}
+                              onClick={[Function]}
+                              onResponderGrant={[Function]}
+                              onResponderMove={[Function]}
+                              onResponderRelease={[Function]}
+                              onResponderTerminate={[Function]}
+                              onResponderTerminationRequest={[Function]}
+                              onStartShouldSetResponder={[Function]}
+                              style={
+                                Object {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "flexWrap": "wrap",
+                                  "justifyContent": "space-between",
+                                  "opacity": 1,
+                                  "paddingVertical": 8,
+                                }
+                              }
+                            >
+                              <Text
+                                style={
+                                  Object {
+                                    "color": "#1292B4",
+                                    "flex": 2,
+                                    "fontSize": 18,
+                                    "fontWeight": "400",
+                                  }
+                                }
+                              >
+                                Style
+                              </Text>
+                              <Text
+                                style={
+                                  Array [
+                                    Object {
+                                      "flex": 3,
+                                      "fontSize": 18,
+                                      "fontWeight": "400",
+                                      "paddingVertical": 16,
+                                    },
+                                    Object {
+                                      "color": "#444",
+                                    },
+                                  ]
+                                }
+                              >
+                                Covers how to use the prop named style which controls the visuals.
+                              </Text>
+                            </View>
+                            <View
+                              style={
+                                Array [
+                                  Object {
+                                    "height": 0.5,
+                                  },
+                                  Object {
+                                    "backgroundColor": "#DAE1E7",
+                                  },
+                                ]
+                              }
+                            />
+                            <View
+                              accessibilityRole="button"
+                              accessible={true}
+                              focusable={true}
+                              onClick={[Function]}
+                              onResponderGrant={[Function]}
+                              onResponderMove={[Function]}
+                              onResponderRelease={[Function]}
+                              onResponderTerminate={[Function]}
+                              onResponderTerminationRequest={[Function]}
+                              onStartShouldSetResponder={[Function]}
+                              style={
+                                Object {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "flexWrap": "wrap",
+                                  "justifyContent": "space-between",
+                                  "opacity": 1,
+                                  "paddingVertical": 8,
+                                }
+                              }
+                            >
+                              <Text
+                                style={
+                                  Object {
+                                    "color": "#1292B4",
+                                    "flex": 2,
+                                    "fontSize": 18,
+                                    "fontWeight": "400",
+                                  }
+                                }
+                              >
+                                Layout
+                              </Text>
+                              <Text
+                                style={
+                                  Array [
+                                    Object {
+                                      "flex": 3,
+                                      "fontSize": 18,
+                                      "fontWeight": "400",
+                                      "paddingVertical": 16,
+                                    },
+                                    Object {
+                                      "color": "#444",
+                                    },
+                                  ]
+                                }
+                              >
+                                React Native uses flexbox for layout, learn how it works.
+                              </Text>
+                            </View>
+                            <View
+                              style={
+                                Array [
+                                  Object {
+                                    "height": 0.5,
+                                  },
+                                  Object {
+                                    "backgroundColor": "#DAE1E7",
+                                  },
+                                ]
+                              }
+                            />
+                            <View
+                              accessibilityRole="button"
+                              accessible={true}
+                              focusable={true}
+                              onClick={[Function]}
+                              onResponderGrant={[Function]}
+                              onResponderMove={[Function]}
+                              onResponderRelease={[Function]}
+                              onResponderTerminate={[Function]}
+                              onResponderTerminationRequest={[Function]}
+                              onStartShouldSetResponder={[Function]}
+                              style={
+                                Object {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "flexWrap": "wrap",
+                                  "justifyContent": "space-between",
+                                  "opacity": 1,
+                                  "paddingVertical": 8,
+                                }
+                              }
+                            >
+                              <Text
+                                style={
+                                  Object {
+                                    "color": "#1292B4",
+                                    "flex": 2,
+                                    "fontSize": 18,
+                                    "fontWeight": "400",
+                                  }
+                                }
+                              >
+                                Components
+                              </Text>
+                              <Text
+                                style={
+                                  Array [
+                                    Object {
+                                      "flex": 3,
+                                      "fontSize": 18,
+                                      "fontWeight": "400",
+                                      "paddingVertical": 16,
+                                    },
+                                    Object {
+                                      "color": "#444",
+                                    },
+                                  ]
+                                }
+                              >
+                                The full list of components and APIs inside React Native.
+                              </Text>
+                            </View>
+                            <View
+                              style={
+                                Array [
+                                  Object {
+                                    "height": 0.5,
+                                  },
+                                  Object {
+                                    "backgroundColor": "#DAE1E7",
+                                  },
+                                ]
+                              }
+                            />
+                            <View
+                              accessibilityRole="button"
+                              accessible={true}
+                              focusable={true}
+                              onClick={[Function]}
+                              onResponderGrant={[Function]}
+                              onResponderMove={[Function]}
+                              onResponderRelease={[Function]}
+                              onResponderTerminate={[Function]}
+                              onResponderTerminationRequest={[Function]}
+                              onStartShouldSetResponder={[Function]}
+                              style={
+                                Object {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "flexWrap": "wrap",
+                                  "justifyContent": "space-between",
+                                  "opacity": 1,
+                                  "paddingVertical": 8,
+                                }
+                              }
+                            >
+                              <Text
+                                style={
+                                  Object {
+                                    "color": "#1292B4",
+                                    "flex": 2,
+                                    "fontSize": 18,
+                                    "fontWeight": "400",
+                                  }
+                                }
+                              >
+                                Navigation
+                              </Text>
+                              <Text
+                                style={
+                                  Array [
+                                    Object {
+                                      "flex": 3,
+                                      "fontSize": 18,
+                                      "fontWeight": "400",
+                                      "paddingVertical": 16,
+                                    },
+                                    Object {
+                                      "color": "#444",
+                                    },
+                                  ]
+                                }
+                              >
+                                How to handle moving between screens inside your application.
+                              </Text>
+                            </View>
+                            <View
+                              style={
+                                Array [
+                                  Object {
+                                    "height": 0.5,
+                                  },
+                                  Object {
+                                    "backgroundColor": "#DAE1E7",
+                                  },
+                                ]
+                              }
+                            />
+                            <View
+                              accessibilityRole="button"
+                              accessible={true}
+                              focusable={true}
+                              onClick={[Function]}
+                              onResponderGrant={[Function]}
+                              onResponderMove={[Function]}
+                              onResponderRelease={[Function]}
+                              onResponderTerminate={[Function]}
+                              onResponderTerminationRequest={[Function]}
+                              onStartShouldSetResponder={[Function]}
+                              style={
+                                Object {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "flexWrap": "wrap",
+                                  "justifyContent": "space-between",
+                                  "opacity": 1,
+                                  "paddingVertical": 8,
+                                }
+                              }
+                            >
+                              <Text
+                                style={
+                                  Object {
+                                    "color": "#1292B4",
+                                    "flex": 2,
+                                    "fontSize": 18,
+                                    "fontWeight": "400",
+                                  }
+                                }
+                              >
+                                Networking
+                              </Text>
+                              <Text
+                                style={
+                                  Array [
+                                    Object {
+                                      "flex": 3,
+                                      "fontSize": 18,
+                                      "fontWeight": "400",
+                                      "paddingVertical": 16,
+                                    },
+                                    Object {
+                                      "color": "#444",
+                                    },
+                                  ]
+                                }
+                              >
+                                How to use the Fetch API in React Native.
+                              </Text>
+                            </View>
+                            <View
+                              style={
+                                Array [
+                                  Object {
+                                    "height": 0.5,
+                                  },
+                                  Object {
+                                    "backgroundColor": "#DAE1E7",
+                                  },
+                                ]
+                              }
+                            />
+                            <View
+                              accessibilityRole="button"
+                              accessible={true}
+                              focusable={true}
+                              onClick={[Function]}
+                              onResponderGrant={[Function]}
+                              onResponderMove={[Function]}
+                              onResponderRelease={[Function]}
+                              onResponderTerminate={[Function]}
+                              onResponderTerminationRequest={[Function]}
+                              onStartShouldSetResponder={[Function]}
+                              style={
+                                Object {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "flexWrap": "wrap",
+                                  "justifyContent": "space-between",
+                                  "opacity": 1,
+                                  "paddingVertical": 8,
+                                }
+                              }
+                            >
+                              <Text
+                                style={
+                                  Object {
+                                    "color": "#1292B4",
+                                    "flex": 2,
+                                    "fontSize": 18,
+                                    "fontWeight": "400",
+                                  }
+                                }
+                              >
+                                Help
+                              </Text>
+                              <Text
+                                style={
+                                  Array [
+                                    Object {
+                                      "flex": 3,
+                                      "fontSize": 18,
+                                      "fontWeight": "400",
+                                      "paddingVertical": 16,
+                                    },
+                                    Object {
+                                      "color": "#444",
+                                    },
+                                  ]
+                                }
+                              >
+                                Need more help? There are many other React Native developers who may have the answer.
+                              </Text>
+                            </View>
+                            <View
+                              style={
+                                Array [
+                                  Object {
+                                    "height": 0.5,
+                                  },
+                                  Object {
+                                    "backgroundColor": "#DAE1E7",
+                                  },
+                                ]
+                              }
+                            />
+                            <View
+                              accessibilityRole="button"
+                              accessible={true}
+                              focusable={true}
+                              onClick={[Function]}
+                              onResponderGrant={[Function]}
+                              onResponderMove={[Function]}
+                              onResponderRelease={[Function]}
+                              onResponderTerminate={[Function]}
+                              onResponderTerminationRequest={[Function]}
+                              onStartShouldSetResponder={[Function]}
+                              style={
+                                Object {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "flexWrap": "wrap",
+                                  "justifyContent": "space-between",
+                                  "opacity": 1,
+                                  "paddingVertical": 8,
+                                }
+                              }
+                            >
+                              <Text
+                                style={
+                                  Object {
+                                    "color": "#1292B4",
+                                    "flex": 2,
+                                    "fontSize": 18,
+                                    "fontWeight": "400",
+                                  }
+                                }
+                              >
+                                Follow us on Twitter
+                              </Text>
+                              <Text
+                                style={
+                                  Array [
+                                    Object {
+                                      "flex": 3,
+                                      "fontSize": 18,
+                                      "fontWeight": "400",
+                                      "paddingVertical": 16,
+                                    },
+                                    Object {
+                                      "color": "#444",
+                                    },
+                                  ]
+                                }
+                              >
+                                Stay in touch with the community, join in on Q&As and more by following React Native on Twitter.
+                              </Text>
+                            </View>
+                          </View>
+                        </View>
+                      </View>
+                    </RCTScrollView>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RNSScreen>
+    </RNSScreenContainer>
+  </RNCSafeAreaProvider>
+</View>
+`;

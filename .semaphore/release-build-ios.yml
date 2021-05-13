@@ -22,6 +22,7 @@ blocks:
           - cache restore
           - bundle install --path vendor/bundle
           - cache store
+          - nvm install 14
 
           # setup cocoapods
           - cd ios

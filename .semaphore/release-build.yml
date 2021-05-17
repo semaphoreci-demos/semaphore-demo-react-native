@@ -30,6 +30,7 @@ blocks:
           - gem install bundler -v '2.1.4'
           - bundle install --path vendor/bundle
           - cache store
+          - nvm install 14
 
           # setup cocoapods
           - cd ios

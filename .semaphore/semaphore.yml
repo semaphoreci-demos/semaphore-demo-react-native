@@ -60,6 +60,7 @@ blocks:
             - brew tap wix/brew
             - brew install applesimutils
             - cache restore
+            - nvm install 14
             - cd ios
             - pod install
             - cd ..

@@ -11,7 +11,7 @@ import { StatusBar } from 'react-native';
 import Router from './app/router';
 
 // enableScreens();
-//test
+//test 1
 const App: React.FC = () => {
   return (
     <>

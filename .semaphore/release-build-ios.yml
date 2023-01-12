@@ -1,5 +1,5 @@
 version: v1.0
-name: "Build the app using fastlane"
+name: Build the app using fastlane
 agent:
   machine:
     type: a1-standard-4
@@ -12,25 +12,14 @@ blocks:
           value: en_US.UTF-8
       prologue:
         commands:
-          # Download source code from GitHub:
           - checkout
-
-          # Restore dependencies from cache. This command will not fail in
-          # case of a cache miss. In case of a cache hit, bundle  install will
-          # complete in about a second.
-          # For more info on caching, see https://docs.semaphoreci.com/article/68-caching-dependencies
           - cache restore
           - bundle install --path vendor/bundle
           - cache store
-
-          # setup cocoapods
           - cd ios
           - pod install
           - cd ..
       jobs:
         - name: Fastlane build
           commands:
-            # Gym builds and packages iOS apps.
-            # See https://docs.fastlane.tools/actions/build_app/
-            # and https://shift.infinite.red/simple-react-native-ios-releases-4c28bb53a97b
             - npm run fastlane-build-ios

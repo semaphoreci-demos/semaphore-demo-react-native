@@ -1,8 +1,9 @@
 version: v1.0
-name: "Build the app using fastlane"
+name: Build the app using fastlane
 agent:
   machine:
     type: e1-standard-2
+    os_image: ubuntu2004
   containers:
     - name: main
       image: 'registry.semaphoreci.com/android:29-node'
@@ -19,28 +20,17 @@ blocks:
           value: en_US.UTF-8
       prologue:
         commands:
-          # Download source code from GitHub:
           - checkout
-
-          # Restore dependencies from cache. This command will not fail in
-          # case of a cache miss. In case of a cache hit, bundle  install will
-          # complete in about a second.
-          # For more info on caching, see https://docs.semaphoreci.com/article/68-caching-dependencies
           - cache restore
           - gem install bundler -v '2.1.4'
           - bundle install --path vendor/bundle
           - cache store
-
-          # setup cocoapods
           - cd ios
           - pod install
           - cd ..
       jobs:
         - name: Fastlane build
           commands:
-            # Gym builds and packages iOS apps.
-            # See https://docs.fastlane.tools/actions/build_app/
-            # and https://shift.infinite.red/simple-react-native-ios-releases-4c28bb53a97b
             - npm run fastlane-build-ios
   - name: Build app Android
     dependencies: []
@@ -50,13 +40,7 @@ blocks:
           value: en_US.UTF-8
       prologue:
         commands:
-          # Download source code from GitHub:
           - checkout
-
-          # Restore dependencies from cache. This command will not fail in
-          # case of a cache miss. In case of a cache hit, bundle  install will
-          # complete in about a second.
-          # For more info on caching, see https://docs.semaphoreci.com/article/68-caching-dependencies
           - cache restore
           - bundle install --path vendor/bundle
           - cache store
